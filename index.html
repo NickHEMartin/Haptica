@@ -1,0 +1,42 @@
+<!-- Version 24 -->
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <!-- Name for the Tab -->
+    <title>Haptica</title>
+
+    <!-- References the CSS -->
+    <link rel="stylesheet" href="indexCSS.css">
+  </head>
+
+  <body id="container">
+    <div id="title">
+      <!-- Uses the title image made from project one to make a nice heading for the website -->
+      <img src="images/Haptica.png" alt="Haptica Logo" id="logo">
+    </div>
+    <br>
+
+    <div id="mic">
+      <img onclick="startDictation()" src="images/mic.png" width="75%" />
+    </div>
+    <br>
+
+    <!-- Search Bar HTML -->
+    <form id="coorBox" method="get" action="https://www.google.com/search">
+      <!-- Search Box the the user can interact with to enter their destination loaction -->
+      <input id="address" type="text" placeholder="Search">
+      <!-- Submit button when hit will start the java script code -->
+      <img id="submit" type="button" value="Submit" src="images/Submit.png">
+    </form>
+    <br>
+
+    <!-- Displays the map implimented by the Google API -->
+    <div id="map"></div>
+
+    <!-- Links to the CSS, Javascript, and the Google Map API -->
+    <script src="indexJS.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB9NS6UtaCtvTytSXmlS5ArEEr_XSaZ9B8&callback=initMap"></script>
+  </body>
+</html>

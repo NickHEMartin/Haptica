@@ -1,0 +1,77 @@
+<!-- Version 24 -->
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <!-- Name for the Tab -->
+    <title>Haptica</title>
+
+    <!-- References the CSS -->
+    <link rel="stylesheet" href="compassCSS.css">
+  </head>
+
+  <body id="container">
+    <div id="title">
+      <!-- Uses the title image made from project one to make a  nice heading for the website -->
+      <img src="images/Haptica.png" alt="Haptica Logo" id="logo">
+    </div>
+
+    <div id="button">
+      <img type="button" id="startButton" onclick="compass()" src="images/startButton.png"><br>
+      <a href="index.html">
+        <img type="button" id="backButton" src="images/backButton.png"><br>
+      </a>
+    </div>
+
+    <div id="compassImages">
+      <div id="nArrow">
+        <img src="images/nArrow.png" alt="North Arrow" id="north">
+      </div>
+      <div id="dArrow">
+        <img src="images/dArrow.png" alt="Directional Arrow" id="direct">
+      </div>
+      <div id="back button">
+        <a href="index.html">
+          <img src="images/backButton.png" id="backButton2" type="button">
+        </a>
+      </div>
+    </div>
+    <br>
+
+    <div id="coordinates">
+      <p>
+        <!-- Holds data that shows current location coordinates and provide a heading to broadcast what data it is -->
+        Current Location:<br/>
+        <span id="latC">???</span>, <span id="longC">???</span>
+        <p>
+        <!-- Holds data that shows destination location coordinates and provide a heading to broadcast what data it is -->
+        Destination:<br/>
+        <span id="latD">???</span>, <span id="longD">???</span>
+        <p>
+        <!-- Holds data that shows the difference in degrees between the two locations and provide a heading to broadcast what data it is -->
+        Heading Angle:<br/>
+        <span id="heading">???</span>
+        <p>
+        <!-- Holds data that shows which way north is (at 0  or 360) and provide a heading to broadcast what data it is -->
+        Degrees from North:<br/>
+        <span id="alpha">???</span>
+        <p>
+        <!-- Holds data that shows how many degrees from the desired location the user is facing and provide a heading to broadcast what data it is -->
+        Degrees from Destination:<br/>
+        <span id="direction">???</span>
+        <p>
+        <!-- Holds data that shows what phone is being used -->
+        Closeness:<br/>
+        <span id="latA">???</span>, <span id="longA">???</span>
+        <p>
+        <!-- Holds data that shows what phone is being used -->
+        Device Type:<br/>
+        <span id="phone">???</span>
+      </p>
+    </div>
+    <!-- Links to the CSS, Javascript, and the Google Map API -->
+    <script src="compassJS.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB9NS6UtaCtvTytSXmlS5ArEEr_XSaZ9B8&libraries=geometry"></script>
+  </body>
+</html>
