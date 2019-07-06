@@ -18,6 +18,7 @@
       <img src="images/Close.png">
   </a>
   <div class="menu-content">
+    <img src="images/Logo.png" class="menulogo">
     <a href="index.html">Search</a>
     <a href="compass.html">Compass</a>
     <a href="about.html">About</a>
@@ -35,6 +36,7 @@
     <br>
 
     <div id="button">
+      <h2>PLAY</h2>
       <img id="startButton" onclick="compass()" src="images/startbutton.png">
     </div>
 
@@ -45,13 +47,12 @@
       <div id="dArrow">
         <img src="images/dArrow.png" alt="Directional Arrow" id="direct">
       </div>
+      <div id="DegsNorth">
+        <span id="alpha">0.0</span>
+        <span id="Direct">North</span>
+      </div>
     </div>
     <br>
-
-    <div id="DegsNorth">
-      <span id="alpha">???</span>
-      <span id="Direct">???</span>
-    </div>
 
     <div id="coordinates">
       <p>
@@ -87,5 +88,7 @@
     <!-- Links to the CSS, Javascript, and the Google Map API -->
     <script src="compassJS.js"></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB9NS6UtaCtvTytSXmlS5ArEEr_XSaZ9B8&libraries=geometry"></script>
+
+    
   </body>
 </html>

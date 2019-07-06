@@ -52,10 +52,39 @@ h1{
 	background-clip: padding-box;
 }
 
+#DegsNorth{
+	margin-top: 10%;
+	text-align: center;
+	font-size: 60px;
+	margin-left: 25%;
+	margin-right: 25%;
+	background: #41FFD1;
+	background-clip: padding-box;
+	border-radius: 25px;
+	border-style: solid;
+	border-width: 10px;
+	border-color: white; 
+}
+
 #button {
 	text-align: center;
 	margin: 2em;
 }
+
+#button h2{
+	margin-top: 10%;
+	text-align: center;
+	font-size: 60px;
+	margin-left: 25%;
+	margin-right: 25%;
+	background: #41FFD1;
+	background-clip: padding-box;
+	border-radius: 25px;
+	border-style: solid;
+	border-width: 10px;
+	border-color: white; 
+}
+
 #startButton {
 	margin-top: 25%;
 	width: 90%;
@@ -88,11 +117,9 @@ h1{
 	text-transform: uppercase;
 	font-size: 2em;
     font-weight: bold;
-    font-family: 'oswaldheavy', Arial, Helvetica, sans-serif;
 }
 #latC, #longC, #latD, #longD, #heading, #alpha, #direction, #phone, #latA, #longA, #phone {
 	font-weight: normal;
-	font-family: 'cardoregular', "Times New Roman", Times, serif;
 }
 
 /*menu*/
@@ -125,7 +152,7 @@ h1{
 
 .menu-content {
   position: relative;
-  top: 25%;
+  top: 10%;
   width: 100%;
   text-align: center;
   margin-top: 30px;
@@ -145,4 +172,9 @@ h1{
   top: 20px;
   right: 45px;
   font-size: 60px;
+}
+
+.menulogo{
+  padding-bottom: 40%;
+  width: 10%;
 }
