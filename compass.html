@@ -12,16 +12,30 @@
   </head>
 
   <body id="container">
-    <div id="title">
-      <!-- Uses the title image made from project one to make a  nice heading for the website -->
-      <img src="images/Haptica.png" alt="Haptica Logo" id="logo">
+    <!--Menu-->
+  <div id="myNav" class="menu">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+      <img src="images/Close.png">
+  </a>
+  <div class="menu-content">
+    <a href="index.html">Search</a>
+    <a href="compass.html">Compass</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</div>
+
+<div class="menubtn">
+  <img src="images/Menu.png" onclick="openNav()">
+</div>
+
+    <div class="title">
+      <h1>Haptica</h1>
     </div>
+    <br>
 
     <div id="button">
       <img id="startButton" onclick="compass()" src="images/startbutton.png">
-      <a href="index.html">
-        <img id="backButton" src="images/backbutton.png">
-      </a>
     </div>
 
     <div id="compassImages">
@@ -31,13 +45,13 @@
       <div id="dArrow">
         <img src="images/dArrow.png" alt="Directional Arrow" id="direct">
       </div>
-      <div id="back button">
-        <a href="index.html">
-        <img src="images/backbutton.png" id="backButton2">
-      </a>
-      </div>
     </div>
     <br>
+
+    <div id="DegsNorth">
+      <span id="alpha">???</span>
+      <span id="Direct">???</span>
+    </div>
 
     <div id="coordinates">
       <p>

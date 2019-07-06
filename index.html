@@ -12,18 +12,30 @@
   </head>
 
   <body id="container">
-    <div id="title">
-      <!-- Uses the title image made from project one to make a nice heading for the website -->
-      <img src="images/Haptica.png" alt="Haptica Logo" id="logo">
+
+      <!--Menu-->
+  <div id="myNav" class="menu">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+      <img src="images/Close.png">
+  </a>
+  <div class="menu-content">
+    <a href="index.html">Search</a>
+    <a href="compass.html">Compass</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</div>
+
+<div class="menubtn">
+  <img src="images/Menu.png" onclick="openNav()">
+</div>
+
+    <div class="title">
+      <h1>Haptica</h1>
     </div>
     <br>
 
-    <div id="mic">
-      <img onclick="startDictation()" src="images/mic.png" width="75%" />
-    </div>
-    <br>
-
-    <!-- Search Bar HTML -->
+     <!-- Search Bar HTML -->
     <form id="coorBox" method="get" action="https://www.google.com/search">
       <!-- Search Box the the user can interact with to enter their destination loaction -->
       <input id="address" type="text" placeholder="Search">
@@ -38,5 +50,12 @@
     <!-- Links to the CSS, Javascript, and the Google Map API -->
     <script src="indexJS.js"></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB9NS6UtaCtvTytSXmlS5ArEEr_XSaZ9B8&callback=initMap"></script>
+
+    <div id="mic">
+      <img onclick="startDictation()" src="images/mic.png" width="75%" />
+    </div>
+    <br>
+
+   
   </body>
 </html>

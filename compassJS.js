@@ -12,6 +12,7 @@ function compass() {
   // Important because without user interaction the vibration API cannot be used
   document.getElementById("compassImages").style.display = 'block';
   document.getElementById("coordinates").style.display = 'none';
+  document.getElementById("DegsNorth").style.display = 'block';
   document.getElementById("button").style.display = 'none';
 
   // Declares variables now so they can be used by everything
@@ -108,6 +109,7 @@ function compass() {
       document.getElementById('direction').innerHTML = direction;
       document.getElementById('latA').innerHTML = latA;
       document.getElementById('longA').innerHTML = longA;
+      document.getElementById("DirectionNEWS").innerHTML = Direct;
 
     }, false); // This could also be what loops the code. I am not fully sure
   }
@@ -124,4 +126,29 @@ function vibrateClose(sound) {
 // Vibrates when pointing the right direction
 function vibrateProximity(duration, interval) {
   navigator.vibrate([400, 400]);
+}
+
+//menu
+
+function openNav() {
+  document.getElementById("myNav").style.height = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.height = "0%";
+}
+
+function Direct(direction) {
+  if (direction>45 &&direction<135){
+    Direct= "East";
+  }
+  else if (direction>135 &&direction<225){
+    Direct= "South";
+  }
+  else if (direction>225 &&direction<315){
+    Direct= "West";
+  }
+  else {
+    Direct= "North";
+  }
 }

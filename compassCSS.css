@@ -32,43 +32,33 @@ html {
 	height: 100%;
 	margin: 0;
 	padding: 0;
-	margin-left: 0;
-	background: url(images/compassBackground.png);
-  	background-repeat: no-repeat;
- 	background-size: cover;
 }
+
 body {
+	font-family: "Helvetica-Narrow", Helvetica, sans-serif; 
 	height: 100%;
 	margin: 0;
-	margin-left: 0;
-	margin-top: 0%;
+	margin-top: -1%;
 	padding: 0;
+	background: #E8F7FF;
+}
 
+h1{
+	color: white;
+	font-size: 6em;
+	margin-top: -17%;
+	padding: 5%;
+	background: black;
+	background-clip: padding-box;
 }
-#logo {
-	width: 80%;
-	margin: auto;
-	text-align: center;
-	display: block;
-}
+
 #button {
 	text-align: center;
 	margin: 2em;
 }
 #startButton {
-	margin-top: 50%;
+	margin-top: 25%;
 	width: 90%;
-}
-#backButton {
-	width: 50%;
-}
-#backButton2 {
-	width: 45%;
-	position: absolute;
-	display: block;
-	left: 27.5%;
-	right:27.5%;
-	margin-top: 85%;
 }
 /* Come CSS */
 #compassImages {
@@ -77,18 +67,18 @@ body {
 #north {
 	position: absolute;
 	display: block;
-	left: 12.5%;
-	right: 12.5%;
-	width: 75%;
-	margin-top: 0%;
+	left: 5%;
+	right: 5%;
+	width: 90%;
+	margin-top: 25%;
 }
 #direct {
 	position: absolute;
 	display: block;
-	left: 12.5%;
-	right: 12.5%;
-	width: 75%;
-	margin-top: 0%;
+	left: 5%;
+	right: 5%;
+	width: 90%;
+	margin-top: 25%;
 }
 /* Mostly CSS for Testing Text */
 #coordinates {
@@ -103,4 +93,56 @@ body {
 #latC, #longC, #latD, #longD, #heading, #alpha, #direction, #phone, #latA, #longA, #phone {
 	font-weight: normal;
 	font-family: 'cardoregular', "Times New Roman", Times, serif;
+}
+
+/*menu*/
+
+.menubtn img{
+	cursor: pointer;
+	width: 10%;
+	margin-left:85%;
+	margin-top: 7%;
+}
+
+.menu a img{
+	cursor: pointer;
+	width: 40%;
+	margin-left: 90%;
+	margin-top: -20%;
+}
+
+.menu {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #E8F7FF;
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+
+.menu-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.menu a {
+  padding: 7.5%;
+  text-decoration: none;
+  font-size: 5em;
+  color: #16CFB3;
+  display: block;
+  transition: 0.3s;
+}
+
+.menu .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
 }
